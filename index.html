@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +13,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- miama font -->
+    <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet">
+                
 
     <style>
         .font-inter{
             font-family: 'Inter', sans-serif;
         }
+
+        .font-miama{
+            font-family: 'Miama', sans-serif;
+        }
     </style>
 </head>
-<body>
-    <header>
+<body class="font-inter">  
+    <header class="px-5 md:px-24 lg:px-48 py-5 md:py-8 lg:py-14 bg-gradient-to-r from-[#111] to-[#77777700]">
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -43,39 +50,111 @@
                     <ul
                       tabindex="0"
                       class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Contact</a></li>
+                      <li><a>About</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">daisyUI</a>
+                  <a class="btn btn-ghost text-xl text-[#E6533C] font-extrabold">Fitness</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-end hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                    <li><a class="hover:btn hover:bg-[#E6533C] hover:rounded-3xl">Home</a></li>
+                    
+                    <li><a class="hover:btn hover:bg-[#E6533C] hover:rounded-3xl">Services</a></li>
+                    <li><a class="hover:btn hover:bg-[#E6533C] hover:rounded-3xl">Contact</a></li>
+                    <li><a class="hover:btn hover:bg-[#E6533C] hover:rounded-3xl">About</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end">
-                  <a class="btn">Button</a>
-                </div>
+                
               </div>
         </nav>
+
+        <!-- banner section -->
+        <div class="hero min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <img
+                src="images/Images 2.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+                <h1 class="text-5xl font-bold">Get body in <span class="font-miama">shape</span> & stay healthy</h1>
+                <p class="py-6">
+                    A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!
+                </p>
+                <div class="flex gap-10">
+                    <button class="btn bg-[#E6533C] text-white hover:border-white">Join Club Now!</button>
+                    <button class="btn bg-[#E6533C] text-white hover:border-white">Download app</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </header>
+
+    <main class="mt-12 md:mt-20 lg:mt-24">
+      <!-- habits section -->
+       <section>
+        <h1 class="text-center text-5xl font-black">Change Your Habits</h1>
+        <p class="text-center text-[14px] mt-3">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+        <!-- card section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 md:mt-12 lg:mt-14">
+          <!-- 1st card -->
+          <div class="card shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/image 3.png"
+                alt="Shoes"
+                class="rounded-full" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Movement</h2>
+              <p>We believe fitness should be accessible to everyone</p>
+            </div>
+          </div>
+
+          <!-- 2nd card -->
+          <div class="card shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/image 2.png"
+                alt="Shoes"
+                class="rounded-full" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Movement</h2>
+              <p>We believe fitness should be accessible to everyone</p>
+            </div>
+          </div>
+
+          <!-- 3rd card -->
+          <div class="card shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/image 4.png"
+                alt="Shoes"
+                class="rounded-full" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Movement</h2>
+              <p>We believe fitness should be accessible to everyone</p>
+            </div>
+          </div>
+
+          <!-- 4th card -->
+          <div class="card shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/image 4.png"
+                alt="Shoes"
+                class="rounded-full" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Movement</h2>
+              <p>We believe fitness should be accessible to everyone</p>
+            </div>
+          </div>
+        </div>
+       </section>
+    </main>
 </body>
 </html>
